@@ -41,7 +41,7 @@ Route::get('sub-categories/{sub_categories}/edit', [SubCategoryController::class
 Route::delete('sub-categories/{sub_categories}', [SubCategoryController::class,'destroy'])->name('sub-categories.destroy');
 Route::put('sub-categories/{sub_categories}',[SubCategoryController::class,'update'])->name('sub_categories.update');
  
-//Route::resource('sub-categories',SubCategoryController::class);
+Route::resource('sub-categories',SubCategoryController::class);
 });
 
 Auth::routes();
